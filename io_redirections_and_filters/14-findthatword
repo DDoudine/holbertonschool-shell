@@ -1,2 +1,2 @@
 #!/bin/bash
-grep /root
+grep -w root | cat
