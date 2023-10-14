@@ -1,16 +1,16 @@
-man or help:
+#man or help:
 
-cd
-ls
-pwd
-less
-file
-ln
-cp
-mv
-rm
-mkdir
-type
-which
-help
-man
+*cd
+*ls
+*pwd
+*less
+*file
+*ln
+*cp
+*mv
+*rm
+*mkdir
+*type
+*which
+*help
+*man
