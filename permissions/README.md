@@ -15,8 +15,8 @@ En résumé, le Shell et les permissions sont des éléments fondamentaux dans l
 
 * Permission de Lecture (r) :
 
-* * Autorise un utilisateur à lire le contenu d'un fichier ou à lister les fichiers dans un répertoire.
-* * Permet l'accès aux données sans possibilité de les modifier.
+  * Autorise un utilisateur à lire le contenu d'un fichier ou à lister les fichiers dans un répertoire.
+  * Permet l'accès aux données sans possibilité de les modifier.
 
 * Permission d'Écriture (w) :
 
