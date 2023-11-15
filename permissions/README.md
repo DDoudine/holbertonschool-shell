@@ -15,38 +15,38 @@ En résumé, le Shell et les permissions sont des éléments fondamentaux dans l
 
 * Permission de Lecture (r) :
 
- - Autorise un utilisateur à lire le contenu d'un fichier ou à lister les fichiers dans un répertoire.
- - Permet l'accès aux données sans possibilité de les modifier.
+ * Autorise un utilisateur à lire le contenu d'un fichier ou à lister les fichiers dans un répertoire.
+ * Permet l'accès aux données sans possibilité de les modifier.
 
 * Permission d'Écriture (w) :
 
- - Autorise un utilisateur à modifier le contenu d'un fichier ou à créer de nouveaux fichiers dans un répertoire.
- - Offre la capacité de manipuler et de mettre à jour les données.
+ * Autorise un utilisateur à modifier le contenu d'un fichier ou à créer de nouveaux fichiers dans un répertoire.
+ * Offre la capacité de manipuler et de mettre à jour les données.
 
 * Permission d'Exécution (x) :
 
- - Autorise un utilisateur à exécuter un fichier comme un programme.
- - Nécessaire pour lancer des scripts ou des programmes exécutables.
+ * Autorise un utilisateur à exécuter un fichier comme un programme.
+ * Nécessaire pour lancer des scripts ou des programmes exécutables.
 
  ### Commandes de Gestion des Permissions :
 
 * chmod :
 
- - Modifie les permissions d'un fichier ou d'un répertoire.
- - Utilisé pour définir qui peut lire, écrire, ou exécuter un fichier.
- - Exemple : chmod +x mon_script.sh permet à l'utilisateur d'exécuter le script.
+ * Modifie les permissions d'un fichier ou d'un répertoire.
+ * Utilisé pour définir qui peut lire, écrire, ou exécuter un fichier.
+ * Exemple : chmod +x mon_script.sh permet à l'utilisateur d'exécuter le script.
 
 * chown :
 
- - Modifie le propriétaire d'un fichier ou d'un répertoire.
- - Utile pour changer l'utilisateur associé à un fichier.
- - Exemple : chown nouvel_utilisateur fichier.txt attribue le fichier à un nouvel utilisateur.
+ * Modifie le propriétaire d'un fichier ou d'un répertoire.
+ * Utile pour changer l'utilisateur associé à un fichier.
+ * Exemple : chown nouvel_utilisateur fichier.txt attribue le fichier à un nouvel utilisateur.
 
 * chgrp :
 
- - Modifie le groupe associé à un fichier ou à un répertoire.
- - Permet de changer le groupe auquel appartient un fichier.
- - Exemple : chgrp nouveau_groupe dossier assigne le dossier à un nouveau groupe.
+ * Modifie le groupe associé à un fichier ou à un répertoire.
+ * Permet de changer le groupe auquel appartient un fichier.
+ * Exemple : chgrp nouveau_groupe dossier assigne le dossier à un nouveau groupe.
 
 ## Resources:
 * [Permissions](https://linuxcommand.org/lc3_lts0090.php)
