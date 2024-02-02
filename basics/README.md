@@ -51,11 +51,11 @@ En résumé, le Shell, par son interface en ligne de commande, offre un moyen pu
 Example of line count and first line
 
 ```bash
-mathieu@ubuntu:/tmp$ wc -l 12-file_type 
+amandine@ubuntu:/tmp$ wc -l 12-file_type 
 2 12-file_type
-mathieu@ubuntu:/tmp$ head -n 1 12-file_type 
+amandine@ubuntu:/tmp$ head -n 1 12-file_type 
 #!/bin/bash
-mathieu@ubuntu:/tmp$ 
+amandine@ubuntu:/tmp$ 
 ```
 
 In order to test your scripts, you will need to use this command: chmod u+x file. We will see later what does chmod mean and do, but you can have a look at man chmod if you are curious.
@@ -63,23 +63,23 @@ In order to test your scripts, you will need to use this command: chmod u+x file
 Example
 
 ```bash
-mathieu@ubuntu:/tmp$ ls
+amandine@ubuntu:/tmp$ ls
 12-file_type
 lll
-mathieu@ubuntu:/tmp$ ls -la lll
--rw-rw-r-- 1 julien julien 15 Sep 19 21:05 lll
-mathieu@ubuntu:/tmp$ cat lll
+amandine@ubuntu:/tmp$ ls -la lll
+-rw-rw-r-- 1 julien julien  lll
+amandine@ubuntu:/tmp$ cat lll
 #!/bin/bash
 ls
-mathieu@ubuntu:/tmp$ ls -l lll
--rw-rw-r-- 1 julien julien 15 Sep 19 21:05 lll
-mathieu@ubuntu:/tmp$ chmod u+x lll # you do not have to understand this yet
-mathieu@ubuntu:/tmp$ ls -l lll
--rwxrw-r-- 1 julien julien 15 Sep 19 21:05 lll
-mathieu@ubuntu:/tmp$ ./lll
+amandine@ubuntu:/tmp$ ls -l lll
+-rw-rw-r-- 1 julien julien  lll
+amandine@ubuntu:/tmp$ chmod u+x lll # you do not have to understand this yet
+amandine@ubuntu:/tmp$ ls -l lll
+-rwxrw-r-- 1 julien julien  lll
+amandine@ubuntu:/tmp$ ./lll
 12-file_type
 lll
-mathieu@ubuntu:/tmp$ 
+amandine@ubuntu:/tmp$ 
 ```
 
 ## TASKS: 
@@ -106,14 +106,14 @@ $
 Write a script that changes the working directory to the user’s home directory.
 
 ```bash
-mathieu@ubuntu:/tmp$ pwd
+julien@ubuntu:/tmp$ pwd
 /tmp
-mathieu@ubuntu:/tmp$ echo $HOME
+julien@ubuntu:/tmp$ echo $HOME
 /home/julien
-mathieu@ubuntu:/tmp$ source ./2-bring_me_home
-mathieu@ubuntu:~$ pwd
+julien@ubuntu:/tmp$ source ./2-bring_me_home
+julien@ubuntu:~$ pwd
 /home/julien
-mathieu@ubuntu:~$ 
+julien@ubuntu:~$ 
 ```
 
 ### 3. The long format
@@ -121,11 +121,12 @@ Display current directory contents in a long format
 
 ```bash
 $ ./3-listfiles
-total 32
--rwxr-xr-x@ 1 mathieu staff 18 Jan 25 00:19 0-current_working_directory
--rwxr-xr-x@ 1 mathieu staff 19 Jan 25 00:23 1-listit
--rwxr-xr-x@ 1 mathieu staff 18 Jan 25 00:29 2-bring_me_home
--rwxr-xr-x@ 1 mathieu staff 18 Jan 25 00:39 3-listfiles
+total 40
+-rwxr-xr-x@ 1 sylvain staff 18 Jan 25 00:19 0-current_working_directory
+-rwxr-xr-x@ 1 sylvain staff 19 Jan 25 00:23 1-listit
+-rwxr-xr-x@ 1 sylvain staff 18 Jan 25 00:29 2-bring_me_home
+-rwxr-xr-x@ 1 sylvain staff 18 Jan 25 00:39 3-listfiles
+-rwxr-xr-x@ 1 sylvain staff 18 Jan 25 00:20 README.md
 $
 ```
 
@@ -134,14 +135,15 @@ Display current directory contents, including hidden files (starting with .). Us
 
 ```bash
 $ ./4-listmorefiles
-total 32
-drwxr-xr-x@ 6 mathieu staff 204 Jan 25 00:29 .
-drwxr-xr-x@ 43 mathieu staff 1462 Jan 25 00:19 ..
--rwxr-xr-x@ 1 mathieu staff 18 Jan 25 00:19 0-current_working_directory
--rwxr-xr-x@ 1 mathieu staff 19 Jan 25 00:23 1-listit
--rwxr-xr-x@ 1 mathieu staff 18 Jan 25 00:29 2-bring_me_home
--rwxr-xr-x@ 1 mathieu staff 18 Jan 25 00:39 3-listfiles
--rwxr-xr-x@ 1 mathieu staff 18 Jan 25 00:41 4-listmorefiles
+total 48
+drwxr-xr-x@ 6 sylvain staff 204 Jan 25 00:29 .
+drwxr-xr-x@ 43 sylvain staff 1462 Jan 25 00:19 ..
+-rwxr-xr-x@ 1 sylvain staff 18 Jan 25 00:19 0-current_working_directory
+-rwxr-xr-x@ 1 sylvain staff 19 Jan 25 00:23 1-listit
+-rwxr-xr-x@ 1 sylvain staff 18 Jan 25 00:29 2-bring_me_home
+-rwxr-xr-x@ 1 sylvain staff 18 Jan 25 00:39 3-listfiles
+-rwxr-xr-x@ 1 sylvain staff 18 Jan 25 00:41 4-listmorefiles
+-rwxr-xr-x@ 1 sylvain staff 18 Jan 25 00:20 README.md
 $
 ```
 
@@ -154,7 +156,7 @@ Display current directory contents.
 
 ```bash
 $ ./5-listfilesdigitonly
-total 32
+total 56
 drwxr-xr-x@ 6 501 20 204 Jan 25 00:29 .
 drwxr-xr-x@ 43 501 20 1462 Jan 25 00:19 ..
 -rwxr-xr-x@ 1 501 20 18 Jan 25 00:19 0-current_working_directory
@@ -163,6 +165,7 @@ drwxr-xr-x@ 43 501 20 1462 Jan 25 00:19 ..
 -rwxr-xr-x@ 1 501 20 20 Jan 25 00:39 3-listfiles
 -rwxr-xr-x@ 1 501 20 18 Jan 25 00:41 4-listmorefiles
 -rwxr-xr-x@ 1 501 20 18 Jan 25 00:43 5-listfilesdigitonly
+-rwxr-xr-x@ 1 501 20 18 Jan 25 00:20 README.md
 $
 ```
 
@@ -212,14 +215,14 @@ $
 Write a script that changes the working directory to the previous one.
 
 ```bash
-mathieu@ubuntu:/tmp$ pwd
+julien@ubuntu:/tmp$ pwd
 /tmp
-mathieu@ubuntu:/tmp$ cd /var
-mathieu@ubuntu:/var$ pwd
+julien@ubuntu:/tmp$ cd /var
+julien@ubuntu:/var$ pwd
 /var
-mathieu@ubuntu:/var$ source ./10-back
+julien@ubuntu:/var$ source ./10-back
 /tmp
-mathieu@ubuntu:/tmp$ pwd
+julien@ubuntu:/tmp$ pwd
 /tmp
 ```
 
@@ -228,6 +231,7 @@ Write a script that lists all files (even ones with names beginning with a perio
 
 ### 12. File type
 Write a script that prints the type of the file named iamafile. The file iamafile will be in the /tmp directory when we will run your script.
+
 
 ```bash
 ubuntu@ip-172-31-63-244:~$ ./12-file_type
@@ -310,22 +314,22 @@ Create a script that creates the directories welcome/, welcome/to/ and welcome/t
 You are only allowed to use two spaces (and lines) in your script, not more.
 
 ```bash
-mathieu@ubuntu:/tmp/h$ ls -l
+julien@ubuntu:/tmp/h$ ls -l
 total 4
--rwxrw-r-- 1 mathieu mathieu 44 Sep 20 12:09 17-tree
-mathieu@ubuntu:/tmp/h$ wc -l 17-tree 
+-rwxrw-r-- 1 julien julien 44 Sep 20 12:09 17-tree
+julien@ubuntu:/tmp/h$ wc -l 17-tree 
 2 17-tree
-mathieu@ubuntu:/tmp/h$ head -1 17-tree 
+julien@ubuntu:/tmp/h$ head -1 17-tree 
 #!/bin/bash
-mathieu@ubuntu:/tmp/h$ tr -cd ' ' < 17-tree | wc -c # you do not have to understand this yet, but the result should be 2, 1 or 0
+julien@ubuntu:/tmp/h$ tr -cd ' ' < 17-tree | wc -c # you do not have to understand this yet, but the result should be 2, 1 or 0
 2
-mathieu@ubuntu:/tmp/h$ ./17-tree 
-mathieu@ubuntu:/tmp/h$ ls
+julien@ubuntu:/tmp/h$ ./17-tree 
+julien@ubuntu:/tmp/h$ ls
 17-tree  welcome
-mathieu@ubuntu:/tmp/h$ ls welcome/
+julien@ubuntu:/tmp/h$ ls welcome/
 to
-mathieu@ubuntu:/tmp/h$ ls -l welcome/to
+julien@ubuntu:/tmp/h$ ls -l welcome/to
 total 4
-drwxrwxr-x 2 mathieu mathieu 4096 Sep 20 12:11 school
-mathieu@ubuntu:/tmp/h$ 
+drwxrwxr-x 2 julien julien 4096 Sep 20 12:11 school
+julien@ubuntu:/tmp/h$ 
 ```
