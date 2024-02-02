@@ -53,12 +53,12 @@ Name: ls
 Value: rm *
 
 ```bash
-mathieu@ubuntu:/tmp/0x03$ ls
+amandine@ubuntu:/tmp/0x03$ ls
 0-alias  file1  file2
-mathieu:/tmp/0x03$ source ./0-alias 
-mathieu@ubuntu:/tmp/0x03$ ls
-mathieu@ubuntu:/tmp/0x03$ \ls
-mathieu@ubuntu:/tmp/0x03$ 
+amandine:/tmp/0x03$ source ./0-alias 
+amandine@ubuntu:/tmp/0x03$ ls
+amandine@ubuntu:/tmp/0x03$ \ls
+amandine@ubuntu:/tmp/0x03$ 
 
 ```
 
@@ -66,44 +66,44 @@ mathieu@ubuntu:/tmp/0x03$
 Create a script that prints hello user, where user is the current Linux user.
 
 ```bash
-mathieu@ubuntu:/tmp/0x03$ id
-uid=1000(mathieu) gid=1000(mathieu) groups=1000(mathieu),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),113(lpadmin),128(sambashare)
-mathieu@ubuntu:/tmp/0x03$ ./1-hello_you 
-hello mathieu
-mathieu@ubuntu:/tmp/0x03$ 
+amandine@ubuntu:/tmp/0x03$ id
+uid=1000(amandine) gid=1000(amandine) groups=1000(amandine),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),113(lpadmin),128(sambashare)
+amandine@ubuntu:/tmp/0x03$ ./1-hello_you 
+hello amandine
+amandine@ubuntu:/tmp/0x03$ 
 ```
 
 ### 2. The path to success is to take massive, determined action
 Add /action to the PATH. /action should be the last directory the shell looks into when looking for a program.
 
 ```bash
-mathieu@ubuntu:/tmp/0x03$ echo $PATH
-/home/mathieu/bin:/home/julien/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
-mathieu@ubuntu:/tmp/0x03$ source ./2-path 
-mathieu@ubuntu:/tmp/0x03$ echo $PATH
-/home/mathieu/bin:/home/mathieu/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/action
-mathieu@ubuntu:/tmp/0x03$ 
+amandine@ubuntu:/tmp/0x03$ echo $PATH
+/home/amandine/bin:/home/julien/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+amandine@ubuntu:/tmp/0x03$ source ./2-path 
+amandine@ubuntu:/tmp/0x03$ echo $PATH
+/home/amandine/bin:/home/amandine/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/action
+amandine@ubuntu:/tmp/0x03$ 
 ```
 
 ### 3. If the path be beautiful, let us not ask where it leads
 Create a script that counts the number of directories in the PATH.
 
 ```bash
-mathieu@ubuntu:/tmp/0x03$ echo $PATH
-/home/mathieu/bin:/home/mathieu/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
-mathieu@ubuntu:/tmp/0x03$ . ./3-paths 
+amandine@ubuntu:/tmp/0x03$ echo $PATH
+/home/amandine/bin:/home/amandine/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+amandine@ubuntu:/tmp/0x03$ . ./3-paths 
 11
-mathieu@ubuntu:/tmp/0x03$ PATH=/home/mathieu/bin:/home/mathieu/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:::::/hello
-mathieu@ubuntu:/tmp/0x03$ . ./3-paths 
+amandine@ubuntu:/tmp/0x03$ PATH=/home/amandine/bin:/home/amandine/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:::::/hello
+amandine@ubuntu:/tmp/0x03$ . ./3-paths 
 12
-mathieu@ubuntu:/tmp/0x03$ 
+amandine@ubuntu:/tmp/0x03$ 
 ```
 
 ### 4. Global variables
 Create a script that lists environment variables.
 
 ```bash
-mathieu@ubuntu:/tmp/0x03$ source ./4-global_variables
+amandine@ubuntu:/tmp/0x03$ source ./4-global_variables
 CC=gcc
 CDPATH=.:~:/usr/local:/usr:/
 CFLAGS=-O2 -fomit-frame-pointer
@@ -140,14 +140,14 @@ LEX=flex
 LOCAL_MACHINE=octarine
 LOGNAME=franky
 [...]
-mathieu@ubuntu:/tmp/0x03$ 
+amandine@ubuntu:/tmp/0x03$ 
 ```
 
 ### 5. Local variables
 Create a script that lists all local variables and environment variables, and functions.
 
 ```bash
-mathieu@ubuntu:/tmp/0x03$ . ./5-local_variables
+amandine@ubuntu:/tmp/0x03$ . ./5-local_variables
 BASH=/bin/bash
 BASHOPTS=checkwinsize:cmdhist:complete_fullquote:expand_aliases:extglob:extquote:force_fignore:histappend:interactive_comments:progcomp:promptvars:sourcepath
 BASH_ALIASES=()
@@ -168,7 +168,7 @@ DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-Fg27Lr20bq
 DEFAULTS_PATH=/usr/share/gconf/ubuntu.default.path
 DESKTOP_SESSION=ubuntu
 [...]
-mathieu@ubuntu:/tmp/0x03$ 
+amandine@ubuntu:/tmp/0x03$ 
 ```
 
 ### 6. Local variable
@@ -187,10 +187,10 @@ Value: School
 Write a script that prints the result of the addition of 128 with the value stored in the environment variable TRUEKNOWLEDGE, followed by a new line.
 
 ```bash
-mathieu@production-503e7013:~$ export TRUEKNOWLEDGE=1209
-mathieu@production-503e7013:~$ ./8-true_knowledge | cat -e
+amandine@production-503e7013:~$ export TRUEKNOWLEDGE=1209
+amandine@production-503e7013:~$ ./8-true_knowledge | cat -e
 1337$
-mathieu@production-503e7013:~$
+amandine@production-503e7013:~$
 ```
 
 ### 9. Divide and rule
@@ -199,11 +199,11 @@ Write a script that prints the result of POWER divided by DIVIDE, followed by a 
 POWER and DIVIDE are environment variables
 
 ```bash
-mathieu@production-503e7013:~$ export POWER=42784
-mathieu@production-503e7013:~$ export DIVIDE=32
-mathieu@production-503e7013:~$ ./9-divide_and_rule | cat -e
+amandine@production-503e7013:~$ export POWER=42784
+amandine@production-503e7013:~$ export DIVIDE=32
+amandine@production-503e7013:~$ ./9-divide_and_rule | cat -e
 1337$
-mathieu@production-503e7013:~$
+amandine@production-503e7013:~$
 ```
 
 ### 10. Love is anterior to life, posterior to death, initial of creation, and the exponent of breath
@@ -213,11 +213,11 @@ BREATH and LOVE are environment variables
 The script should display the result, followed by a new line
 
 ```bash
-mathieu@production-503e7013:~/$ export BREATH=4
-mathieu@production-503e7013:~/$ export LOVE=3
-mathieu@production-503e7013:~/$ ./10-love_exponent_breath
+amandine@production-503e7013:~/$ export BREATH=4
+amandine@production-503e7013:~/$ export LOVE=3
+amandine@production-503e7013:~/$ ./10-love_exponent_breath
 64
-mathieu@production-503e7013:~/$
+amandine@production-503e7013:~/$
 ```
 
 ### 11. There are 10 types of people in the world -- Those who understand binary, and those who don't
@@ -227,10 +227,10 @@ The number in base 2 is stored in the environment variable BINARY
 The script should display the number in base 10, followed by a new line
 
 ```bash
-mathieu@production-503e7013:~/$ export BINARY=10100111001
-mathieu@production-503e7013:~/$ ./11-binary_to_decimal
+amandine@production-503e7013:~/$ export BINARY=10100111001
+amandine@production-503e7013:~/$ ./11-binary_to_decimal
 1337
-mathieu@production-503e7013:~/$
+amandine@production-503e7013:~/$
 ```
 
 ### 12. Combination
@@ -243,12 +243,12 @@ Do not print oo
 Your script file should contain maximum 64 characters
 
 ```bash
-mathieu@ubuntu:/tmp/0x03$ echo $((26 ** 2 -1))
+amandine@ubuntu:/tmp/0x03$ echo $((26 ** 2 -1))
 675
-mathieu@ubuntu:/tmp/0x03$ ./12-combinations | wc -l
+amandine@ubuntu:/tmp/0x03$ ./12-combinations | wc -l
 675
-mathieu@ubuntu:/tmp/0x03$ 
-mathieu@ubuntu:/tmp/0x03$ ./12-combinations | tail -303 | head -10
+amandine@ubuntu:/tmp/0x03$ 
+amandine@ubuntu:/tmp/0x03$ ./12-combinations | tail -303 | head -10
 oi
 oj
 ok
@@ -259,7 +259,7 @@ op
 oq
 or
 os
-mathieu@ubuntu:/tmp/0x03$ 
+amandine@ubuntu:/tmp/0x03$ 
 ```
 
 ### 13. Floats
@@ -287,14 +287,14 @@ The number in base 10 is stored in the environment variable DECIMAL
 The script should display the number in base 16, followed by a new line
 
 ```bash
-mathieu@production-503e7013:~/$ export DECIMAL=16
-mathieu@production-503e7013:~/$ ./14-decimal_to_hexadecimal
+amandine@production-503e7013:~/$ export DECIMAL=16
+amandine@production-503e7013:~/$ ./14-decimal_to_hexadecimal
 10
-mathieu@production-503e7013:~/$ export DECIMAL=1337
-mathieu@production-503e7013:~/$ ./14-decimal_to_hexadecimal | cat -e
+amandine@production-503e7013:~/$ export DECIMAL=1337
+amandine@production-503e7013:~/$ ./14-decimal_to_hexadecimal | cat -e
 539$
-mathieu@production-503e7013:~/$ export DECIMAL=15
-mathieu@production-503e7013:~/$ ./14-decimal_to_hexadecimal | cat -e
+amandine@production-503e7013:~/$ export DECIMAL=15
+amandine@production-503e7013:~/$ ./14-decimal_to_hexadecimal | cat -e
 f$
-mathieu@production-503e7013:~/$
+amandine@production-503e7013:~/$
 ```
