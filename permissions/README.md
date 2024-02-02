@@ -1,52 +1,45 @@
 # SHELL, PERMISSIONS
 
-## Résumé:
+## Summary:
 
-Les permissions dans un système de fichiers dictent les actions qu'un utilisateur peut effectuer sur un fichier ou un répertoire. Ces actions incluent la lecture, l'écriture et l'exécution. Les utilisateurs sont catégorisés en trois groupes : le propriétaire du fichier, le groupe associé, et les autres utilisateurs.
+Permissions in a file system dictate the actions a user can perform on a file or directory. These actions include reading, writing, and executing. Users are categorized into three groups: the file owner, the associated group, and other users.
 
-La commande chmod (change mode) est couramment utilisée pour modifier les permissions d'un fichier. Elle permet de spécifier les autorisations pour chaque catégorie d'utilisateurs en utilisant des chiffres ou des symboles.
+The `chmod` (change mode) command is commonly used to modify the permissions of a file. It allows specifying permissions for each category of users using numbers or symbols.
 
-La combinaison du Shell et de la gestion des permissions offre un niveau élevé de contrôle et de sécurité. Les administrateurs système peuvent restreindre l'accès aux fichiers sensibles, tandis que les développeurs peuvent assurer la confidentialité et l'intégrité de leurs codes sources.
+The combination of the Shell and permission management offers a high level of control and security. System administrators can restrict access to sensitive files, while developers can ensure the confidentiality and integrity of their source code.
 
-En résumé, le Shell et les permissions sont des éléments fondamentaux dans l'administration système et le développement, garantissant une utilisation efficace des fichiers et renforçant la sécurité des systèmes d'exploitation.
+In summary, the Shell and permissions are fundamental elements in system administration and development, ensuring effective use of files and enhancing the security of operating systems.
 
+### Read, Write, and Execute Permissions:
 
-### Permissions de Lecture, Écriture et Exécution :
+* **Read Permission (r):**
+  * Allows a user to read the content of a file or list files in a directory.
+  * Grants access to data without the ability to modify it.
 
-* Permission de Lecture (r) :
+* **Write Permission (w):**
+  * Allows a user to modify the content of a file or create new files in a directory.
+  * Provides the ability to manipulate and update data.
 
-  * Autorise un utilisateur à lire le contenu d'un fichier ou à lister les fichiers dans un répertoire.
-  * Permet l'accès aux données sans possibilité de les modifier.
+* **Execute Permission (x):**
+  * Allows a user to execute a file as a program.
+  * Necessary for running scripts or executable programs.
 
-* Permission d'Écriture (w) :
+### Permissions Management Commands:
 
-  * Autorise un utilisateur à modifier le contenu d'un fichier ou à créer de nouveaux fichiers dans un répertoire.
-  * Offre la capacité de manipuler et de mettre à jour les données.
+* **chmod:**
+  * Modifies the permissions of a file or directory.
+  * Used to set who can read, write, or execute a file.
+  * Example: `chmod +x my_script.sh` allows the user to execute the script.
 
-* Permission d'Exécution (x) :
+* **chown:**
+  * Changes the owner of a file or directory.
+  * Useful for changing the user associated with a file.
+  * Example: `chown new_user file.txt` assigns the file to a new user.
 
-  * Autorise un utilisateur à exécuter un fichier comme un programme.
-  * Nécessaire pour lancer des scripts ou des programmes exécutables.
-
- ### Commandes de Gestion des Permissions :
-
-* chmod :
-
-  * Modifie les permissions d'un fichier ou d'un répertoire.
-  * Utilisé pour définir qui peut lire, écrire, ou exécuter un fichier.
-  * Exemple : chmod +x mon_script.sh permet à l'utilisateur d'exécuter le script.
-
-* chown :
-
-  * Modifie le propriétaire d'un fichier ou d'un répertoire.
-  * Utile pour changer l'utilisateur associé à un fichier.
-  * Exemple : chown nouvel_utilisateur fichier.txt attribue le fichier à un nouvel utilisateur.
-
-* chgrp :
-
-  * Modifie le groupe associé à un fichier ou à un répertoire.
-  * Permet de changer le groupe auquel appartient un fichier.
-  * Exemple : chgrp nouveau_groupe dossier assigne le dossier à un nouveau groupe.
+* **chgrp:**
+  * Changes the group associated with a file or directory.
+  * Allows changing the group to which a file belongs.
+  * Example: `chgrp new_group directory` assigns the directory to a new group.
 
 ## Resources:
 * [Permissions](https://linuxcommand.org/lc3_lts0090.php)

@@ -1,26 +1,22 @@
 # SHELL, I/O REDIRECTIONS AND FILTERS
 
-## Résumé:
+## Summary:
 
+Shell, I/O Redirection, and Filters are essential concepts in programming and system administration.
 
-Le Shell, la redirection d'E/S, et les filtres sont des concepts essentiels en programmation et administration système.
+1. **Shell:**
+   - The Shell is a command-line interface that allows users to interact with the operating system by entering commands.
+   - It provides an environment for script execution, process management, and file manipulation.
 
-1. Shell :
+2. **I/O Redirection:**
+   - I/O redirection is used to manage the input/output flow of commands.
+   - Operators like >, <, and | are employed to redirect output to a file, read input from a file, or connect the output of one command to the input of another.
 
-* Le Shell est une interface en ligne de commande permettant aux utilisateurs d'interagir avec le système d'exploitation en saisissant des commandes.
-* Il offre un environnement pour l'exécution de scripts, la gestion des processus, et la manipulation des fichiers.
+3. **Filters:**
+   - Filters are commands that process or modify the data stream.
+   - Common commands like grep, sed, and awk are used to filter, search, and transform textual data.
 
-2. Redirection d'E/S :
-
-* La redirection d'E/S permet de gérer le flux d'entrée/sortie des commandes.
-* Les opérateurs tels que >, <, et | sont utilisés pour rediriger la sortie vers un fichier, lire l'entrée depuis un fichier, ou connecter la sortie d'une commande à l'entrée d'une autre.
-
-3. Filtres :
-
-* Les filtres sont des commandes qui traitent ou modifient le flux de données.
-* Des commandes courantes, comme grep, sed, et awk, sont utilisées pour filtrer, rechercher, et transformer des données textuelles.
-
-En résumé, le Shell offre une interface puissante pour interagir avec le système. La redirection d'E/S permet de contrôler le flux des données, tandis que les filtres facilitent le traitement et la manipulation des données. Ces concepts sont fondamentaux pour la programmation et l'administration système.
+In summary, the Shell offers a powerful interface for interacting with the system. I/O redirection allows control over data flow, while filters facilitate processing and manipulation of data. These concepts are fundamental to programming and system administration.
 
 ## Resources:
 * [Shell, I/O Redirection](https://linuxcommand.org/lc3_lts0070.php)

@@ -1,25 +1,25 @@
 # SHELL, BASICS
 
-## Résumé:
+## Summary:
 
-Le Shell, également appelé interpréteur de commandes, est un outil fondamental dans les systèmes d'exploitation tels que Linux et macOS. Il offre une interface en ligne de commande qui permet aux utilisateurs d'interagir avec le système de manière textuelle, en utilisant des commandes pour effectuer diverses tâches, allant de la gestion de fichiers à l'exécution de scripts.
+The Shell, also known as a command interpreter, is a fundamental tool in operating systems such as Linux and macOS. It provides a command-line interface that allows users to interact with the system textually, using commands to perform various tasks, from file management to script execution.
 
-Principes de base du Shell
-Explorons quelques commandes de base du Shell qui vous permettront de naviguer et de gérer les fichiers de votre système :
+Basic Shell Principles:
+Let's explore some basic Shell commands that will enable you to navigate and manage files on your system:
 
-* ls : Affiche la liste des fichiers et dossiers dans le répertoire courant.
-* cd : Change le répertoire courant.
-* pwd : Affiche le chemin complet du répertoire courant.
-* mkdir : Crée un nouveau répertoire.
-* touch : Crée un nouveau fichier vide.
-* cp : Copie un fichier ou un répertoire.
-* mv : Déplace ou renomme un fichier ou un répertoire.
-* rm : Supprime un fichier ou un répertoire.
+* `ls`: Displays the list of files and folders in the current directory.
+* `cd`: Changes the current directory.
+* `pwd`: Displays the full path of the current directory.
+* `mkdir`: Creates a new directory.
+* `touch`: Creates a new empty file.
+* `cp`: Copies a file or directory.
+* `mv`: Moves or renames a file or directory.
+* `rm`: Deletes a file or directory.
 
-Ces commandes de base servent de fondement incontournable pour débuter dans l'exploration du Shell et de sa ligne de commande.
+These basic commands serve as an essential foundation to start exploring the Shell and its command line.
 
 Conclusion:
-En résumé, le Shell, par son interface en ligne de commande, offre un moyen puissant et flexible d'interagir avec un système d'exploitation. Bien que l'apprentissage des commandes de base puisse demander un temps d'adaptation, la maîtrise de ces outils permet une gestion efficace des fichiers et des tâches système, offrant ainsi un contrôle approfondi sur le fonctionnement de l'ordinateur.
+In summary, the Shell, through its command-line interface, provides a powerful and flexible means to interact with an operating system. While learning basic commands may require some adaptation time, mastering these tools allows for efficient file management and system tasks, providing in-depth control over the computer's operation.
 
 ## Resources:
 * [What Is "The Shell" ?](https://linuxcommand.org/lc3_lts0010.php)

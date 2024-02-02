@@ -1,28 +1,27 @@
 # SHELL, INIT FILES, VARIABLES AND EXPANSIONS
 
-## Résumé:
+## Summary:
 
-### Init files
-Lorsqu'un shell démarre, il lit et exécute des commandes à partir de fichiers de configuration appelés "init files". Ces fichiers renferment des variables d'environnement, des fonctions, et des commandes qui s'activent à chaque ouverture d'une nouvelle session de shell. Parmi les fichiers d'initialisation les plus couramment utilisés, on trouve ~/.bashrc, spécifique à Bash et activé pour chaque session interactive, ~/.bash_profile, également spécifique à Bash et exécuté lors de la connexion, ainsi que /etc/profile, qui contient des paramètres d'environnement système appliqués à tous les utilisateurs au moment de la connexion.
+### Init Files
+When a shell starts, it reads and executes commands from configuration files known as "init files." These files contain environment variables, functions, and commands that activate with each opening of a new shell session. Among the most commonly used initialization files are ~/.bashrc, specific to Bash and executed for each interactive session, ~/.bash_profile, also Bash-specific and run during login, and /etc/profile, which contains system environment settings applied to all users upon login.
 
 ### Variables
 
-Les variables sont des emplacements de mémoire utilisés pour stocker des données dans un programme. Elles sont caractérisées par un nom et un type, et peuvent être modifiées au cours de l'exécution du programme. Les variables facilitent le stockage et la manipulation des informations, rendant les programmes plus flexibles et dynamiques.
+Variables are memory locations used to store data in a program. They are characterized by a name and a type and can be modified during program execution. Variables facilitate the storage and manipulation of information, making programs more flexible and dynamic.
 
 ### Expansions
 
-Les expansions dans le shell permettent de substituer la valeur d'une variable ou d'effectuer des opérations sur celle-ci. Plusieurs types d'expansions existent, notamment :
+Shell expansions allow substituting or performing operations on the value of a variable. Several types of expansions exist, including:
 
-1. Substitution de commande : Exécute une commande et utilise sa sortie en remplacement de l'expansion, avec l'utilisation de backticks (`) ou $( ).
+1. Command Substitution: Executes a command and uses its output as a replacement for the expansion, using backticks (`) or $( ).
 
-2. Expansion arithmétique : Permet d'effectuer des opérations mathématiques sur des variables, utilisant la syntaxe $(( )).
+2. Arithmetic Expansion: Enables performing mathematical operations on variables, using the syntax $(( )).
 
-3. Expansion de chemin d'accès : Étend la valeur d'une variable pour correspondre à un motif de chemin d'accès de fichier, utilisant les caractères *, ?, et [].
+3. Pathname Expansion: Expands the value of a variable to match a file pathname pattern, utilizing the characters *, ?, and [].
 
-4. Expansion d'accolades : Génère une séquence de valeurs en spécifiant une plage de valeurs à l'intérieur d'accolades {}.
+4. Brace Expansion: Generates a sequence of values by specifying a range of values inside curly braces {}.
 
-Ces expansions sont des outils essentiels pour automatiser des tâches, rendant les scripts plus dynamiques et flexibles. Elles permettent aux scripts de s'adapter à des conditions changeantes sans nécessiter d'intervention manuelle.
-
+These expansions are essential tools for automating tasks, making scripts more dynamic and flexible. They allow scripts to adapt to changing conditions without requiring manual intervention.
 
 ## Resources:
 * [Expansions](https://linuxcommand.org/lc3_lts0080.php)
