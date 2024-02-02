@@ -44,18 +44,20 @@ En résumé, le Shell offre une interface puissante pour interagir avec le syst�
 Write a script that prints “Hello, World”, followed by a new line to the standard output.
 
 ```bash
-amandine@ubuntu:/tmp/h$ ./0-hello_world 
+julien@ubuntu:/tmp/h$ ./0-hello_world 
 Hello, World
-amandine@ubuntu:/tmp/h$ ./0-hello_world | cat -e
+julien@ubuntu:/tmp/h$ ./0-hello_world | cat -e
 Hello, World$
+julien@ubuntu:/tmp/h$ 
 ```
 
 ### 1. Confused smiley
 Write a script that displays a confused smiley "(Ôo)'.
 
 ```bash
-amandine@ubuntu:/tmp/h$ ./1-confused_smiley 
+julien@ubuntu:/tmp/h$ ./1-confused_smiley 
 "(Ôo)'
+julien@ubuntu:/tmp/h$ 
 ```
 
 ### 2. Let's display a file
@@ -162,7 +164,7 @@ The file iacta will be in the working directory
 You’re not allowed to use sed
 
 ```bash
-amandine@ubuntu:/tmp/h$ cat iacta 
+julien@ubuntu:/tmp/h$ cat iacta 
 Alea iacta est
 
 Alea iacta est ("The die is cast") is a Latin phrase attributed by Suetonius
@@ -177,55 +179,56 @@ German (Der Würfel ist gefallen), Hungarian (A kocka el van vetve) and many oth
 indicate that events have passed a point of no return.
 
 Read more: https://en.wikipedia.org/wiki/Alea_iacta_est
-amandine@ubuntu:/tmp/h$ ./6-third_line 
+julien@ubuntu:/tmp/h$ ./6-third_line 
 Alea iacta est ("The die is cast") is a Latin phrase attributed by Suetonius
+julien@ubuntu:/tmp/h$ 
 ```
 
 ### 7. It is a good file that cuts iron without making a noise
 Write a shell script that creates a file named exactly \*\\'"Best School"\'\\*$\?\*\*\*\*\*:) containing the text Best School ending by a new line.
 
 ```bash
-amandine@ubuntu:~/shell$ ls && ./7-file && ls -l && cat -e \\*
+julien@ubuntu:~/shell$ ls && ./7-file && ls -l && cat -e \\*
 0-mac_and_cheese 7-file 7-file~ Makefile
 total 20
--rwxrw-r-- 1 amandine amandine  0-mac_and_cheese
--rwxrw-r-- 1 amandine amandine  7-file
--rwxrw-r-- 1 amandine amandine  7-file~
--rw-rw-r-- 1 amandine amandine  Makefile
--rw-rw-r-- 1 amandine amandine  '\*\\'"Best School"\'\\*$\?\*\*\*\*\*:)'
+-rwxrw-r-- 1 julien julien 79 Jan 20 06:24 0-mac_and_cheese
+-rwxrw-r-- 1 julien julien 90 Jan 20 06:40 7-file
+-rwxrw-r-- 1 julien julien 69 Jan 20 06:37 7-file~
+-rw-rw-r-- 1 julien julien 14 Jan 20 06:38 Makefile
+-rw-rw-r-- 1 julien julien 17 Jan 20 06:40 '\*\\'"Best School"\'\\*$\?\*\*\*\*\*:)'
 Best School$
+julien@ubuntu:~/shell$
 ```
 
 ### 8. Save current state of directory
 Write a script that writes into the file ls_cwd_content the result of the command ls -la. If the file ls_cwd_content already exists, it should be overwritten. If the file ls_cwd_content does not exist, create it.
 
 ```bash
-amandine@ubuntu:/tmp/h$ ls -la
+julien@ubuntu:/tmp/h$ ls -la
 total 20
-drwxrwxr-x  2 amandine amandine  .
-drwxrwxrwt 13 root   root        ..
--rwxrw-r--  1 amandine amandine  8-cwd_state
--rw-rw-r--  1 amandine  amandine hello
--rw-rw-r--  1 amandine amandine  iacta
-
-amandine@ubuntu:/tmp/h$ ./8-cwd_state 
-amandine@ubuntu:/tmp/h$ ls -la
+drwxrwxr-x  2 julien julien 4096 Sep 20 18:18 .
+drwxrwxrwt 13 root   root   4096 Sep 20 18:18 ..
+-rwxrw-r--  1 julien julien   36 Sep 20 18:18 8-cwd_state
+-rw-rw-r--  1 betty  julien   23 Sep 20 14:25 hello
+-rw-rw-r--  1 julien julien  926 Sep 20 17:52 iacta
+julien@ubuntu:/tmp/h$ ./8-cwd_state 
+julien@ubuntu:/tmp/h$ ls -la
 total 24
-drwxrwxr-x  2 amandine amandine  .
-drwxrwxrwt 13 root   root        ..
--rwxrw-r--  1 amandine amandine  8-cwd_state
--rw-rw-r--  1 amandine  amandine hello
--rw-rw-r--  1 amandine amandine  iacta
--rw-rw-r--  1 amandine amandine  ls_cwd_content
-
-amandine@ubuntu:/tmp/h$ cat ls_cwd_content 
+drwxrwxr-x  2 julien julien 4096 Sep 20 18:18 .
+drwxrwxrwt 13 root   root   4096 Sep 20 18:18 ..
+-rwxrw-r--  1 julien julien   36 Sep 20 18:18 8-cwd_state
+-rw-rw-r--  1 betty  julien   23 Sep 20 14:25 hello
+-rw-rw-r--  1 julien julien  926 Sep 20 17:52 iacta
+-rw-rw-r--  1 julien julien  329 Sep 20 18:18 ls_cwd_content
+julien@ubuntu:/tmp/h$ cat ls_cwd_content 
 total 20
-drwxrwxr-x  2 amandine amandine  .
-drwxrwxrwt 13 root   root        ..
--rwxrw-r--  1 amandine amandine  8-cwd_state
--rw-rw-r--  1 amandine  amandine hello
--rw-rw-r--  1 amandine amandine  iacta
--rw-rw-r--  1 amandine amandine  ls_cwd_content
+drwxrwxr-x  2 julien julien 4096 Sep 20 18:18 .
+drwxrwxrwt 13 root   root   4096 Sep 20 18:18 ..
+-rwxrw-r--  1 julien julien   36 Sep 20 18:18 8-cwd_state
+-rw-rw-r--  1 betty  julien   23 Sep 20 14:25 hello
+-rw-rw-r--  1 julien julien  926 Sep 20 17:52 iacta
+-rw-rw-r--  1 julien julien    0 Sep 20 18:18 ls_cwd_content
+julien@ubuntu:/tmp/h$ 
 ```
 
 ### 9. Duplicate last line
@@ -234,7 +237,7 @@ Write a script that duplicates the last line of the file iacta
 The file iacta will be in the working directory
 
 ```bash
-amandine@ubuntu:/tmp/h$ cat iacta 
+julien@ubuntu:/tmp/h$ cat iacta 
 Alea iacta est
 
 Alea iacta est ("The die is cast") is a Latin phrase attributed by Suetonius
@@ -249,9 +252,8 @@ German (Der Würfel ist gefallen), Hungarian (A kocka el van vetve) and many oth
 indicate that events have passed a point of no return.
 
 Read more: https://en.wikipedia.org/wiki/Alea_iacta_est
-
-amandine@ubuntu:/tmp/h$ ./9-duplicate_last_line 
-amandine@ubuntu:/tmp/h$ cat iacta 
+julien@ubuntu:/tmp/h$ ./9-duplicate_last_line 
+julien@ubuntu:/tmp/h$ cat iacta 
 Alea iacta est
 
 Alea iacta est ("The die is cast") is a Latin phrase attributed by Suetonius
@@ -267,46 +269,47 @@ indicate that events have passed a point of no return.
 
 Read more: https://en.wikipedia.org/wiki/Alea_iacta_est
 Read more: https://en.wikipedia.org/wiki/Alea_iacta_est
+julien@ubuntu:/tmp/h$ 
 ```
 
 ### 10. No more javascript
 Write a script that deletes all the regular files (not the directories) with a .js extension that are present in the current directory and all its subfolders.
 
 ```bash
-amandine@ubuntu:/tmp/h$ ls -lR
+julien@ubuntu:/tmp/h$ ls -lR
 .:
 total 24
--rwxrw-r-- 1 amandine amandine   10-no_more_js
-drwxrwxr-x 2 amandine amandine   dir1
-drwxrwxr-x 2 amandine amandine   dir.js
--rw-rw-r-- 1 amandine  amandine  hello
--rw-rw-r-- 1 amandine amandine   iacta
--rw-rw-r-- 1 amandine amandine   ls_cwd_content
--rw-rw-r-- 1 amandine amandine   main.js
+-rwxrw-r-- 1 julien julien   49 Sep 20 18:29 10-no_more_js
+drwxrwxr-x 2 julien julien 4096 Sep 20 18:23 dir1
+drwxrwxr-x 2 julien julien 4096 Sep 20 18:24 dir.js
+-rw-rw-r-- 1 betty  julien   23 Sep 20 14:25 hello
+-rw-rw-r-- 1 julien julien  982 Sep 20 18:21 iacta
+-rw-rw-r-- 1 julien julien  329 Sep 20 18:18 ls_cwd_content
+-rw-rw-r-- 1 julien julien    0 Sep 20 18:23 main.js
 
 ./dir1:
 total 0
--rw-rw-r-- 1 amandine amandine  code.js
+-rw-rw-r-- 1 julien julien 0 Sep 20 18:23 code.js
 
 ./dir.js:
 total 0
-
-amandine@ubuntu:/tmp/h$ ./10-no_more_js 
-amandine@ubuntu:/tmp/h$ ls -lR
+julien@ubuntu:/tmp/h$ ./10-no_more_js 
+julien@ubuntu:/tmp/h$ ls -lR
 .:
 total 24
--rwxrw-r-- 1 amandine amandine     10-no_more_js
-drwxrwxr-x 2 amandine amandine  dir1
-drwxrwxr-x 2 amandine amandine  dir.js
--rw-rw-r-- 1 amandine  amandine hello
--rw-rw-r-- 1 amandine amandine  iacta
--rw-rw-r-- 1 amandine amandine  ls_cwd_content
+-rwxrw-r-- 1 julien julien   49 Sep 20 18:29 10-no_more_js
+drwxrwxr-x 2 julien julien 4096 Sep 20 18:29 dir1
+drwxrwxr-x 2 julien julien 4096 Sep 20 18:24 dir.js
+-rw-rw-r-- 1 betty  julien   23 Sep 20 14:25 hello
+-rw-rw-r-- 1 julien julien  982 Sep 20 18:21 iacta
+-rw-rw-r-- 1 julien julien  329 Sep 20 18:18 ls_cwd_content
 
 ./dir1:
 total 0
 
 ./dir.js:
 total 0
+julien@ubuntu:/tmp/h$ 
 ```
 
 ### 11. Don't just count your directories, make your directories count
@@ -316,45 +319,45 @@ The current and parent directories should not be taken into account
 Hidden directories should be counted
 
 ```bash
-amandine@production-503e7013:~/shell/fun_with_the_shell$ ls -lRa
+julien@production-503e7013:~/shell/fun_with_the_shell$ ls -lRa
 .:
 total 32
-drwxrwxr-x 3 amandine amandine  .
-drwxrwxr-x 3 amandine amandine  ..
--rwxr--r-- 1 amandine amandine  0-commas
--rwxr--r-- 1 amandine amandine  1-empty_casks
--rwxrw-r-- 1 amandine amandine  2-gifs
--rwxrw-r-- 1 amandine amandine  3-directories
--rw-rw-r-- 1 amandine amandine  Makefile
-drwxrwxr-x 4 amandine amandine  test_dir
+drwxrwxr-x 3 julien julien 4096 Jan 20 03:53 .
+drwxrwxr-x 3 julien julien 4096 Jan 20 02:58 ..
+-rwxr--r-- 1 julien julien 43 Jan 20 02:59 0-commas
+-rwxr--r-- 1 julien julien 47 Jan 20 02:50 1-empty_casks
+-rwxrw-r-- 1 julien julien 68 Jan 20 03:35 2-gifs
+-rwxrw-r-- 1 julien julien 47 Jan 20 03:53 3-directories
+-rw-rw-r-- 1 julien julien 14 Jan 20 03:35 Makefile
+drwxrwxr-x 4 julien julien 4096 Jan 20 03:42 test_dir
 
 ./test_dir:
 total 16
-drwxrwxr-x 4 amandine amandine  .
-drwxrwxr-x 3 amandine amandine  ..
--rw-rw-r-- 1 amandine amandine  .horrible_selfie.gif
--rw-rw-r-- 1 amandine amandine  README.md
--rw-rw-r-- 1 amandine amandine  docker.gif
--rw-rw-r-- 1 amandine amandine  file.sh
-drwxrwxr-x 2 amandine amandine  photos
-drwxrwxr-x 2 amandine amandine  rep.gif
+drwxrwxr-x 4 julien julien 4096 Jan 20 03:42 .
+drwxrwxr-x 3 julien julien 4096 Jan 20 03:53 ..
+-rw-rw-r-- 1 julien julien 0 Jan 20 03:40 .horrible_selfie.gif
+-rw-rw-r-- 1 julien julien 0 Jan 20 03:23 README.md
+-rw-rw-r-- 1 julien julien 0 Jan 20 03:17 docker.gif
+-rw-rw-r-- 1 julien julien 0 Jan 20 03:17 file.sh
+drwxrwxr-x 2 julien julien 4096 Jan 20 03:23 photos
+drwxrwxr-x 2 julien julien 4096 Jan 20 03:23 rep.gif
 
 ./test_dir/photos:
 total 8
-drwxrwxr-x 2 amandine amandine  .
-drwxrwxr-x 4 amandine amandine  ..
--rw-rw-r-- 1 amandine amandine  cat.gif
--rw-rw-r-- 1 amandine amandine  index.html
--rw-rw-r-- 1 amandine amandine  main.gif
--rw-rw-r-- 1 amandine amandine  rudy_rigot.gif
+drwxrwxr-x 2 julien julien 4096 Jan 20 03:23 .
+drwxrwxr-x 4 julien julien 4096 Jan 20 03:42 ..
+-rw-rw-r-- 1 julien julien 0 Jan 20 03:23 cat.gif
+-rw-rw-r-- 1 julien julien 0 Jan 20 03:22 index.html
+-rw-rw-r-- 1 julien julien 0 Jan 20 03:23 main.gif
+-rw-rw-r-- 1 julien julien 0 Jan 20 03:23 rudy_rigot.gif
 
 ./test_dir/rep.gif:
 total 8
-drwxrwxr-x 2 amandine amandine  .
-drwxrwxr-x 4 amandine amandine  ..
-amandine@production-503e7013:~/shell/fun_with_the_shell$ ./11-directories
+drwxrwxr-x 2 julien julien 4096 Jan 20 03:23 .
+drwxrwxr-x 4 julien julien 4096 Jan 20 03:42 ..
+julien@production-503e7013:~/shell/fun_with_the_shell$ ./11-directories
 3
-amandine@production-503e7013:~/shell/fun_with_the_shell$
+julien@production-503e7013:~/shell/fun_with_the_shell$
 ```
 
 ### 12. What’s new
@@ -366,24 +369,23 @@ One file per line
 Sorted from the newest to the oldest
 
 ```bash
-amandine@ubuntu:/tmp$ ls -l
+alex@ubuntu:/tmp$ ls -l
 total 7
--rwxr-xr-x 1 501 dialout   0-hello_world
--rwxr-xr-x 1 501 dialout   10-no_more_js
--rwxr-xr-x 1 501 dialout   11-directories
--rwxr-xr-x 1 501 dialout   12-newest_files
--rwxr-xr-x 1 501 dialout   1-confused_smiley
--rwxr-xr-x 1 501 dialout   2-hellofile
--rwxr-xr-x 1 501 dialout   3-twofiles
--rwxr-xr-x 1 501 dialout   4-lastlines
--rwxr-xr-x 1 501 dialout   5-firstlines
--rwxr-xr-x 1 501 dialout   6-third_line
--rwxr-xr-x 1 501 dialout   7-file
--rwxr-xr-x 1 501 dialout   8-cwd_state
--rwxr-xr-x 1 501 dialout   9-duplicate_last_line
--rw-r--r-- 1 501 dialout   README.md
-
-amandine@ubuntu:/tmp$ ./12-newest_files 
+-rwxr-xr-x 1 501 dialout  32 Sep 27 23:51 0-hello_world
+-rwxr-xr-x 1 501 dialout  46 Sep 28 11:09 10-no_more_js
+-rwxr-xr-x 1 501 dialout  43 Sep 28 11:19 11-directories
+-rwxr-xr-x 1 501 dialout  30 Sep 29 13:43 12-newest_files
+-rwxr-xr-x 1 501 dialout  28 Sep 27 23:54 1-confused_smiley
+-rwxr-xr-x 1 501 dialout  28 Sep 27 23:58 2-hellofile
+-rwxr-xr-x 1 501 dialout  39 Sep 27 23:58 3-twofiles
+-rwxr-xr-x 1 501 dialout  33 Sep 27 23:59 4-lastlines
+-rwxr-xr-x 1 501 dialout  33 Sep 28 00:00 5-firstlines
+-rwxr-xr-x 1 501 dialout  28 Sep 28 00:25 6-third_line
+-rwxr-xr-x 1 501 dialout 110 Sep 28 00:34 7-file
+-rwxr-xr-x 1 501 dialout  36 Sep 28 00:34 8-cwd_state
+-rwxr-xr-x 1 501 dialout  35 Sep 28 00:35 9-duplicate_last_line
+-rw-r--r-- 1 501 dialout  19 Sep 27 23:51 README.md
+alex@ubuntu:/tmp$ ./12-newest_files 
 12-newest_files
 11-directories
 10-no_more_js
@@ -394,6 +396,7 @@ amandine@ubuntu:/tmp$ ./12-newest_files
 5-firstlines
 4-lastlines
 3-twofiles
+alex@ubuntu:/tmp$
 ```
 
 ### 13. Being unique is better than being perfect
@@ -404,7 +407,7 @@ Output format: One line, one word
 Words should be sorted
 
 ```bash
-amandine@ubuntu:/tmp/0x02$ cat list 
+julien@ubuntu:/tmp/0x02$ cat list 
 C#
 C
 Javascript
@@ -431,11 +434,11 @@ Javascript
 Javascript
 Javascript
 ASP
-
-amandine@ubuntu:/tmp/0x02$ cat list | ./13-unique 
+julien@ubuntu:/tmp/0x02$ cat list | ./13-unique 
 C
 C++
 Go
+julien@ubuntu:/tmp/0x02$ 
 ```
 
 ### 14. It must be in that file
@@ -513,24 +516,27 @@ $
 Replace all characters A and c from input to Z and e respectively.
 
 ```bash
-amandine@ubuntu:/tmp/0x02$ echo 'Replace all characters `A` and `c` from input to `Z` and `e`.' | ./19-AZ 
+julien@ubuntu:/tmp/0x02$ echo 'Replace all characters `A` and `c` from input to `Z` and `e`.' | ./19-AZ 
 Replaee all eharaeters `Z` and `e` from input to `Z` and `e`.
+julien@ubuntu:/tmp/0x02$ 
 ```
 
 ### 20. Without C, you would live in hiago
 Create a script that removes all letters c and C from input.
 
 ```bash
-amandine@ubuntu:/tmp/0x02$ echo Chicago | ./20-hiago 
+julien@ubuntu:/tmp/0x02$ echo Chicago | ./20-hiago 
 hiago
+julien@ubuntu:/tmp/0x02$ 
 ```
 
 ### 21. esreveR
 Write a script that reverse its input.
 
 ```bash
-amandine@ubuntu:/tmp/0x02$ echo "Reverse" | ./21-reverse 
+julien@ubuntu:/tmp/0x02$ echo "Reverse" | ./21-reverse 
 esreveR
+julien@ubuntu:/tmp/0x02$ 
 ```
 
 ### 22. DJ Cut Killer
@@ -539,7 +545,7 @@ Write a script that displays all users and their home directories, sorted by use
 Based on the the /etc/passwd file
 
 ```bash
-amandine@ubuntu:/tmp/0x02$ cat /etc/passwd
+julien@ubuntu:/tmp/0x02$ cat /etc/passwd
 root:x:0:0:root:/root:/bin/bash
 daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
 bin:x:2:2:bin:/bin:/usr/sbin/nologin
@@ -582,9 +588,8 @@ usbmux:x:120:46:usbmux daemon,,,:/var/lib/usbmux:/bin/false
 julien:x:1000:1000:Julien Barbier,,,:/home/julien:/bin/bash
 guillaume:x:1001:1001:,,,:/home/guillaume:/bin/bash
 betty:x:1002:1002::/home/betty:
-
-amandine@ubuntu:/tmp/0x02$
-amandine@ubuntu:/tmp/0x02$ ./22-users_and_homes 
+julien@ubuntu:/tmp/0x02$
+julien@ubuntu:/tmp/0x02$ ./22-users_and_homes 
 _apt:/nonexistent
 avahi-autoipd:/var/lib/avahi-autoipd
 avahi:/var/run/avahi-daemon
@@ -627,5 +632,5 @@ uucp:/var/spool/uucp
 uuidd:/run/uuidd
 whoopsie:/nonexistent
 www-data:/var/www
-amandine@ubuntu:/tmp/0x02$ 
+julien@ubuntu:/tmp/0x02$
 ```
