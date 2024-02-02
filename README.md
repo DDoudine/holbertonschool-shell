@@ -1,27 +1,27 @@
 # SHELL
 
-Le terme "Shell" peut faire référence à deux concepts distincts : le shell en tant qu'interface utilisateur en ligne de commande et le shell comme un langage de programmation de script. Voici un résumé de ces deux aspects :
+## Summary:
 
-* Shell comme interface utilisateur en ligne de commande :
- * Définition : Le shell est une interface en ligne de commande qui permet à l'utilisateur d'interagir avec le système d'exploitation en saisissant des commandes.
+The term "Shell" can refer to two distinct concepts: the shell as a command-line user interface and the shell as a scripting language. Here is a summary of these two aspects:
 
- * Commandes de base :
+* **Shell as a Command-Line User Interface:**
+  * **Definition:** The shell is a command-line interface that allows the user to interact with the operating system by entering commands.
 
-  * cd : Changer de répertoire.
-  * ls : Lister le contenu d'un répertoire.
-  * mkdir : Créer un nouveau répertoire.
-  * cp : Copier des fichiers ou des répertoires.
-  * mv : Déplacer ou renommer des fichiers ou des répertoires.
-  * rm : Supprimer des fichiers ou des répertoires.
-  * echo : Afficher du texte à la sortie standard.
-  * cat : Afficher le contenu d'un fichier.
+  * **Basic Commands:**
+    * `cd`: Change directory.
+    * `ls`: List the contents of a directory.
+    * `mkdir`: Create a new directory.
+    * `cp`: Copy files or directories.
+    * `mv`: Move or rename files or directories.
+    * `rm`: Remove files or directories.
+    * `echo`: Display text to the standard output.
+    * `cat`: Display the contents of a file.
 
- * Opérations avancées :
-
-  * Redirection (>, >>) : Rediriger la sortie vers un fichier.
-  * Pipe (|) : Passer la sortie d'une commande comme entrée à une autre.
-  * Variables d'environnement : Stocker des informations utiles au système.
-  * Alias : Créer des raccourcis pour des commandes fréquemment utilisées.
+  * **Advanced Operations:**
+    * **Redirection (`>`, `>>`):** Redirect output to a file.
+    * **Pipe (`|`):** Pass the output of one command as input to another.
+    * **Environment Variables:** Store information useful to the system.
+    * **Alias:** Create shortcuts for frequently used commands.
 
 ### General
 * What does RTFM mean?
